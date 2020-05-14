@@ -28,7 +28,10 @@ body {
 }
 
 body {
-  background-color: $base-background-color;
+  // background-color: $base-background-color;
+  background: rgb(221,211,211);
+  background: linear-gradient(160deg, rgba(221,211,211,1) 0%, rgba(224,224,255,1) 45%, rgba(169,218,228,1) 100%);
+  background-attachment: fixed;
 }
 
 footer, article {
