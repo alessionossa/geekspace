@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<section class="post-list">
+  <div class="container">
+    {% for post in paginator.posts %}
+      <article class="post-item">
+        <header class="post-header">
+          <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>{% if post.author %} &middot; <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>{% endif %}</p>
+          <h2 class="post-title" itemprop="name headline">{{ post.title }}</h2>
+        </header>
+        <div class="post-content" itemprop="articleBody">
+            {% if post.excerpt %}
+                {{ post.excerpt }}
+            {% else %}
+                {{ post.content }}
+            {% endif %}
+
+            {% if post.excerpt %}
+                {% comment %}Excerpt may be equal to content. Check.{% endcomment %}
+                {% capture content_words %}
+                {{ post.content | number_of_words }}
+                {% endcapture %}
+                {% capture excerpt_words %}
+                {{ post.excerpt | number_of_words }}
+                {% endcapture %}
+                
+                {% if content_words != excerpt_words %}
+                <a href="{{ post.url | relative_url }}">More &hellip;</a>
+                {% endif %}
+            {% endif %}
+          {% include post-share.html %}
+        </div>
+      </article>
+    {% endfor %}
+
+    {% include pagination.html %}
+  </div>
+
+</section>

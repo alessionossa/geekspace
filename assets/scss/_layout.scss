@@ -199,6 +199,7 @@ nav a, nav input {
   text-transform: uppercase;
   display: inline-block;
   letter-spacing: 1px;
+  // Solution adapted from https://github.com/thoughtbot/bourbon/blob/v4-stable/app/assets/stylesheets/functions/_px-to-rem.scss
   font-size: 14px / 16px * 1em;
   margin-bottom: 1px;
 }
