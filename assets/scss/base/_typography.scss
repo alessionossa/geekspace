@@ -20,31 +20,31 @@ h6 {
 }
 
 h1 {
-  font-size: rem(30);
+  font-size: 30px / 16px * 1em;
 }
 
 h2 {
-  font-size: rem(26);
+  font-size: 26px / 16px * 1em;
 }
 
 h3 {
-  font-size: rem(24);
+  font-size: 24px / 16px * 1em;
 }
 
 h4 {
-  font-size: rem(20);
+  font-size: 20px / 16px * 1em;
 }
 
 h5,
 h6 {
-  font-size: rem(16);
+  font-size: 16px / 16px * 1em;
 }
 
 p {
   margin: 0 0 $small-spacing;
 
   &.lead {
-    font-size: rem(22);
+    font-size: 22px / 16px * 1em;
     font-weight: 300;
   }
 }
@@ -132,7 +132,7 @@ ol,
 dl {
     margin-top: 0;
     margin-left: 1.2em;
-    margin-bottom: 1rem;
+    margin-bottom: 1px / 16px * 1em;
     list-style-type: square;
     list-style-position: outside;
     list-style-image: none;

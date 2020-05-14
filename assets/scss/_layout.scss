@@ -199,7 +199,7 @@ nav a, nav input {
   text-transform: uppercase;
   display: inline-block;
   letter-spacing: 1px;
-  font-size: rem(14);
+  font-size: 14px / 16px * 1em;
   margin-bottom: 1px;
 }
 
@@ -225,7 +225,7 @@ nav a, nav input {
   }
 
   a, span {
-    font-size: rem(12);
+    font-size: 12px / 16px * 1em;
     padding: .5em;
   }
 
@@ -241,7 +241,7 @@ nav a, nav input {
 
   p {
     margin: 0 5em;
-    font-size: rem(14);
+    font-size: 14px / 16px * 1em;
     color: $medium-gray-color;
   }
 }
@@ -266,7 +266,7 @@ nav a, nav input {
 
   small {
     display: block;
-    font-size: rem(12);
+    font-size: 12px / 16px * 1em;
     color: darken($medium-gray-color, 10%);
   }
 
