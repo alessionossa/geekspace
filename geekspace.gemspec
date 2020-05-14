@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
 
 	spec.summary       = "A minimalist Jekyll theme, based on https://github.com/heiswayi/thinkspace"
 	spec.description   = "This theme is build on top of https://github.com/heiswayi/thinkspace, with changes insired by a custom version of https://github.com/doersino/Tumblr-Themes/tree/master/CODE%26SPACE"
-	spec.homepage      = "https://github.com/alessionossa/thinkspace"
+	spec.homepage      = "https://github.com/alessionossa/geekspace"
 	spec.license       = "MIT"
 
 	spec.metadata["plugin_type"] = "theme"
