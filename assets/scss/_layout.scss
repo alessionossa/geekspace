@@ -68,7 +68,8 @@ article {
   padding-bottom: .05em;
   border-bottom: 2px solid transparent;
 
-  @include transition(border 300ms linear);
+  transition: border 300ms linear;
+  //@include transition(border 300ms linear);
 
   &:hover,
   &:focus,
