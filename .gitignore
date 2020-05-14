@@ -2,6 +2,7 @@ _site/
 .sass-cache/
 .bundle/
 .jekyll-cache/
+.gembuild/
 Gemfile.lock
 
 # Windows image file caches
