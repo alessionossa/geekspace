@@ -2,13 +2,19 @@
 layout: default
 ---
 
+{{ content }}
+
 <section class="post-list">
   <div class="container">
     {% for post in paginator.posts %}
       <article class="post-item">
         <header class="post-header">
-          <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>{% if post.author %} &middot; <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>{% endif %}</p>
-          <h2 class="post-title" itemprop="name headline">{{ post.title }}</h2>
+            <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>{% if post.author %} &middot; <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>{% endif %}</p>
+            <h2 class="post-title" itemprop="name headline">
+                <a href="{{ site.baseurl }}{{ post.url }}">
+                    {{ post.title }}
+                </a>
+            </h2>
         </header>
         <div class="post-content" itemprop="articleBody">
             {% if post.excerpt %}

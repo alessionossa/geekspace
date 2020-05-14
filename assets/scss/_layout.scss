@@ -221,8 +221,11 @@ nav a, nav input {
 }
 
 .pagination {
+  padding: 2em;
+
   li, a, span {
     display: inline-block;
+    vertical-align: middle;
   }
 
   a, span {
@@ -259,6 +262,8 @@ nav a, nav input {
 .site-footer {
   @extend .clearfix;
 
+  background-color: $accent-color;
+  
   padding: $base-spacing 0;
 
   a {

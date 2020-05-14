@@ -7,6 +7,7 @@ baseurl       : "" # apply repo name like "/myproject" if used under gh-pages br
 cover         : "" # image uri like logo/cover image for site seo
 
 paginate: 5
+paginate_path: "/page:num/"
 
 google_analytics  : UA-XXXXX-XX
 twitter_username  : ""
@@ -29,19 +30,14 @@ sass:
 
 # Author settings
 author:
-  name     : "John Doe"
+  name     : "Alessio Nossa"
+
+excerpt_separator: <!--more-->
 
 plugins:
   - jekyll-sitemap
   - bourbon
   - jekyll-paginate
-
-# navbar pages
-navbar:
-  - slug : about
-    title: About
-  - slug : blog
-    title: Blog
 
 exclude:
   - "gulp"
