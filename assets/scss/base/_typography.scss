@@ -61,6 +61,10 @@ a {
   }
 }
 
+article a {
+  text-decoration: underline;
+}
+
 hr {
   border-bottom: $base-border;
   border-left: 0;

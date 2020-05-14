@@ -31,11 +31,20 @@ body {
   background-color: $base-background-color;
 }
 
+footer, article {
+  margin: 4em auto;
+}
+
 hr {
   border-top: none;
   border-bottom: 2px solid lighten($light-gray-color, 7%);
   width: 100%;
   margin: $small-spacing 0;
+}
+
+article {
+  background-color: white;
+  box-shadow: 0px 0px 0px 20px white;
 }
 
 .container {
@@ -68,10 +77,58 @@ hr {
   }
 }
 
-.site-header {
-  border-bottom: 1px solid lighten($light-gray-color, 5%);
-  margin-bottom: $small-spacing;
-  min-height: 80px;
+header {
+  text-align: left;
+  padding: 0.6em;
+}
+
+header, footer {
+  text-transform: uppercase;
+}
+
+.site-title {
+  font-size: inherit;
+  padding: 0 2em;
+  background-color: $accent-color;
+  background: $accent-color url(https://66.media.tumblr.com/5d4a8e0614075d56840b853e44a8cc17/10a9ed324dc0d8ee-5a/s128x128u_c1/df7cbf3f4fb11445c32a95c2436a5596e360bf98.pnj) no-repeat top right;
+  min-height: 128px;
+}
+
+.site-title a {
+  display: inline-block;
+  font-size: 4.85em;
+  background-color: transparent;
+  line-height: 1em;
+  padding: 0.27em 0 0.25em;
+  padding-right: 70px;
+}
+
+.site-title a:hover, nav a:hover {
+  transform: scale(1) rotate(0deg) translate(0px, 0px) skew(-15deg, 0deg);
+  font-style: normal;
+}
+
+.site-title > span {
+  color: black;
+  display: inline-block;
+  padding-bottom: 1.5em;
+  text-transform: none;
+}
+.site-title > span:empty {
+  display: none;
+}
+nav ul {
+  margin-top: 0.6em;
+}
+nav li {
+  display: inline-block;
+  background-color: $accent-color;
+  margin-bottom: 0.6em;
+}
+nav a, nav input {
+  display: inline-block;
+  padding: 0.4em 0.6em;
+  background-color: transparent;
 }
 
 .intro {
@@ -101,28 +158,6 @@ hr {
 
   span {
     font-weight: 700;
-  }
-}
-
-.nav {
-  min-height: 64px;
-}
-
-.navbar {
-  float: right;
-  margin: 0;
-  position: relative;
-  padding: 0;
-  pointer-events: all;
-  cursor: pointer;
-
-  li {
-    display: inline-block;
-    padding: 0 .6em;
-  }
-
-  a {
-    @extend .link;
   }
 }
 
@@ -274,9 +309,7 @@ hr {
   }
 
   .post-item {
-    border: 1px solid lighten($light-gray-color, 10%);
     padding: 0 0.5em;
-    background: lighten($light-gray-color, 15%);
   }
 
   .article-title {
