@@ -1,6 +1,13 @@
 
   <header class="container">
-    <h1 class="site-title"><a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}">{{ site.title }}</a></h1>
+    <div class="site-title">
+      <h1>
+        <a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}">{{ site.title }}</a>
+      </h1>
+      {% if site.logo %}
+        <img class="site-logo" src="{{ site.logo | prepend: site.baseurl}}">
+      {% endif %}
+    </div>
     <nav class="nav">
       <ul class="navbar">
         <li><a href="{{ '/about' | prepend: site.baseurl | prepend: site.url }}">About me</a></li>
