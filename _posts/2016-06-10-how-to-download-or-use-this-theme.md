@@ -6,19 +6,19 @@ description: "How to Download or Use This Theme"
 keywords: "dummy content"
 ---
 
-### Use this theme as you main site
+Hydeout is available as the **geekspace** Ruby Gem. Add gem "geekspace", "~> 3.1" to your Gemfile and run bundle install.
 
-- Download or fork the master branch of this theme repo into your GitHub account.
-- Rename the repo into something like `your_username.github.io`.
-- Edit `_config.yml` file to your preferences.
-- Edit `about.md` file for your About page.
-- Inside `_posts` folder, there are sample of blog entries. Learn from it and start yours.
-- Now, visit `http://your_username.github.io` and you should see your blog running.
+If you're installing on Github pages, you may also have to add remote_theme: alessionossa/geekspace to your _config.yml. [See the Github instructions for more details.](https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/)
 
-### Use this theme as a project page
+Hydeout uses pagination, so if you have an index.md, you'll need to swap it with an index.html that uses the index layout:
 
-If you want to use this theme as a project page blog, you don't need to rename the theme repo into `your_username.github.io`.
+```
+---
+layout: index
+title: Home
+---
+```
 
-All you need to do, open `_config.yml` file, change `baseurl` to your project name which contains this theme, e.g. `baseurl: "/myproject"`.
+You'll also need to add a setting to _config.yml telling Jekyll how many posts to include per page (e.g. paginate: 5).
 
 #### Cheers!

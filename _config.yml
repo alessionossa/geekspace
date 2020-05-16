@@ -8,10 +8,10 @@ cover         : "" # image uri like logo/cover image for site seo
 logo          : "/assets/images/logo.jpg"
 
 paginate: 5
-paginate_path: "/page:num/"
+# paginate_path: "/page:num/"
 
 google_analytics  : UA-XXXXX-XX
-twitter_username  : ""
+twitter_username  : "alessionossa"
 comments_enabled  : false # if enabled (set to true), please provide your disqus_username
 disqus_shortname  : ""
 postshare_enabled : true
@@ -21,12 +21,8 @@ permalink   : /:year/:title/
 markdown    : kramdown
 highlighter : rouge
 
-source      : ./
-destination : ./_site
-
 # Sass configuration
 #sass:
-#  sass_dir  : assets/scss
 #  style     : compressed # expanded
 
 # Author settings
