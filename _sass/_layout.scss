@@ -97,6 +97,10 @@ header, footer {
   //background: $accent-color ;
   min-height: 128px;
   position: relative;
+
+  p {
+    padding-bottom: 0.5em;
+  }
 }
 
 .site-title h1 {
@@ -104,7 +108,7 @@ header, footer {
   font-size: 4.85em;
   background-color: transparent;
   line-height: 1em;
-  padding: 0.27em 0 0.25em;
+  padding: 0.27em 0 0.1em;
   padding-right: 70px;
   margin: 0;
   position: relative;
