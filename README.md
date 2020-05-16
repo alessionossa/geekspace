@@ -6,9 +6,9 @@ This theme is build on top of https://github.com/heiswayi/thinkspace, with chang
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![GENERATOR](https://img.shields.io/badge/made_with-jekyll-blue.svg) ![VERSION](https://img.shields.io/badge/current_version-3.1.1-green.svg) ![TRAVIS-CI](https://travis-ci.org/alessinossa/geekspace.svg?branch=master)
 
-[//]: # - **Demo:** https://alessionossa.github.io/geekspace/
+**Demo:** https://alessionossa.github.io/geekspace/
 
-![SCREENSHOT](https://imgur.com/s6hI5YU)
+![screen](https://i.imgur.com/s6hI5YU.png)
 
 ## Usage
 
