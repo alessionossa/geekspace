@@ -9,6 +9,7 @@ layout: default
   </header>
   <div class="post-content" itemprop="articleBody">
     {{ content }}
+    {% include post-tags.html post=page %}
     {% include post-share.html %}
   </div>
 </article>

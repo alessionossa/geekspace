@@ -12,6 +12,25 @@
     <nav class="nav">
       <ul class="navbar">
         <li><a href="{{ '/about' | prepend: site.baseurl | prepend: site.url }}">About me</a></li>
+
+
+        {% comment %}
+          Check if we have tag or search pages page active before linking to it.
+        {% endcomment %}
+        {% assign tags_page = false %}
+        {% assign search_page = false %}
+        {% for node in site.pages %}
+          {% if node.layout == "tags" %}
+            {% assign tags_page = node %}
+          {% elsif node.layout == "search" %}
+            {% assign search_page = node %}
+          {% endif %}
+        {% endfor %}
+
+        {% if tags_page %}
+          <li><a id="tags-link" href="{{ tags_page.url | prepend: site.baseurl | prepend: site.url }}">Tags</a></li>
+        {% endif %}
+
         <li><a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" target="_blank">RSS</a></li>
       </ul>
     </nav>
